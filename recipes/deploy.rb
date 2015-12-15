@@ -40,6 +40,7 @@ app = node['custom_ansible']['app']
 extra_vars['opsworks'] = node['opsworks']
 extra_vars['ansible']  = node['ansible']
 extra_vars['environment_variables'] = node['deploy'][app]['environment_variables'] 
+extra_vars['node'] = node
 folder = node['ansible']['folder']
 
 zippath = '/etc/opsworks-customs'
