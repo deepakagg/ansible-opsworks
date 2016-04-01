@@ -7,6 +7,7 @@ extra_vars['ansible']  = node['ansible']
 extra_vars['node']  = node
 extra_vars['environment_variables'] = node['deploy'][app]['environment_variables']
 extra_vars['repository'] = node['deploy'][app]['scm']
+folder = node['ansible']['folder']
 
 zippath = '/etc/opsworks-customs'
 basepath  = '/etc/opsworks-customs/'+folder
